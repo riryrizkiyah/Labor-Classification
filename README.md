@@ -3,7 +3,7 @@
 ## Use Case Summary
 This use case using is National Labour Force Survey (SAKERNAS) data in North Mollucas Province, taken at the second semester of 2020 (2020 - II).
 
-##Objective Statement
+## Objective Statement
 - Get insight about labour force in South Mollucas
 - Get insight about unemployment in South Mollucas
 

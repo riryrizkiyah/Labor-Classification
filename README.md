@@ -6,7 +6,7 @@
 This use case is trying to explore and analyze labor data in one geographical area. Every analysis in this use case are NOT represents any organization's perspective, and only for personal exploration.
 
 ## Data and Data Source
-This use case is using data from National Labour Force Survey (SAKERNAS) data in Northen Maluku Province held by Statistics Indonesia that taken at the second semester of 2020 (2020 - II).
+This use case is using data from National Labour Force Survey  (NLFS) or SAKERNAS data in Northen Maluku Province held by Statistics Indonesia that taken at the second semester of 2020 (2020 - II).
 The questionnaire can be accessed at: https://sirusa.bps.go.id/sirusa/index.php/kuesioner/2620
 
 ## Objective Statement
@@ -44,7 +44,8 @@ percent. The main information collected in The National Labor Force Survey are d
 years and older. However tabulated data covers household members aged 15 years and older.
 
 # Data Preparation
-Because there are too many variables in dataset (hundreds of columns), the features are choosen by my subjectivity based on general understanding about teh data.
+Because there are too many variables in dataset (hundreds of columns), the features are choosen by my subjectivity based on general understanding about teh data. All the further steps are done by Python.
+
 The coverage of features that will be used to further analysis are:
 - Gender
 - Marital Status
@@ -60,14 +61,14 @@ The coverage of features that will be used to further analysis are:
 # Data Cleansing and Manipulating
 Since the data is based on questionnaire, the name of each column are coded. Most of the data alsa already in numeric. So:
 - All columns are renamed so it easier to be understood
-- Some dictionary are prepared for interprete numerical value (it actually categorical)
+- Some dictionary are prepared for interprete numerical value (it actually categoricals)
 - No missing value
 
 # Exploratory Data Analysis
 ![image](https://user-images.githubusercontent.com/45409844/194709072-0ba15866-dee4-4526-9745-f7bdfadc4711.png)
 
 
-## Labor Force Insight
+## Labor Force Insights
 - In general labor force in Northern Maluku labor force in Northern Maluku dominated by age group between 35-39 yo, followed by age group between 40-44 yo.
 - The Unemployment rate consider small
 - Labor force in Norten Maluku spread balance (proportional to it polulation) all over regions
@@ -81,7 +82,7 @@ Since the data is based on questionnaire, the name of each column are coded. Mos
 ![image](https://user-images.githubusercontent.com/45409844/194706882-9ccddb9d-159c-47ef-92f2-33f8797639cb.png)
 
 
-## Unemployment Insight
+## Unemployment Insights
 
 - Unemployment in Northen Maluku consist of more man than woman (allign with the gender proportion in labor force)
 - Small part of them are graduated in the pandemic period
@@ -105,27 +106,27 @@ Another criteria of non-labor-force beside woman (who do housekeeping), is young
 
 # Modelling : Random Forest Classification
 ## Random Forest Modelling
-- Untuk mengetahui metode terbaik pemodelan Random Forest, maka akan dibandingkan antara 3 metode : Original Data, Undersampling, dan Oversampling.
-- Untuk setiap metode akan dilihat berapa akurasi, presisi, recall dan F1 score nya
-- True Positif: Yang diklasifikasi pekerja adalah pekerja
-- True Negatif: yang diklasifikasi pengangguran adalah pengangguran
-- False positif: Yang diklasifikasi pengangguran adalah pekerja
-- False negatif: Yang diklasifikasi pekerja adalah pengangguran
-- Tujuan model: mengurangi false negatif, maka perlu yang recall nya tinggi
+- To know which sampling method is best used in Random Forest modelling for this data, it will compared 3 types of sampling : Original Data, Undersampling, dan Oversampling.
+- For each sampling method,  Accuracy, Precision, Recall, and F1 score will be checked.
+- True Positive: Classiefied as a worker, is a worker.
+- True Negative: Classified as an unemployment, is an unemployment.
+- False positive: Classified as unemployment, is a worker.
+- False negative: Classified as a worker, is an unemployment.
+- The objective of the model is to decrease false negative, means need it needs a model with high Recall score.
 
 ## Modelling Evaluation
-Metode terbaik dari evaluasi di atas adalah **Random Forest Undersampling** dengan pertimbangan:
-- F1 nya paling besar diantara 3 metode
-- Recall nya paling tinggi (1) sesuai dengan tujuan, yaitu ingin mengurangi false negatif (diklasifikasi pekerja ternyata pengangguran)
+Based on the modelling trial on 3 sampling methods, the best methode is **Random Forest Undersampling** with consideration as follows:
+- Highest F1 score nya between 3 sampling methods (0.67)
+- Highers Recall score (1), allign with the objective: minimize false negative (Classified as a worker, is an unemployment)
 
 
 # Summary
 - Age of labour force in Northen Maluku are spread balance in all of the group age, with highest numbers in range 35 yo - 44 yo
 - Education level of labor force dominated by high school Graduate (middle school, high school, and vocational high school)
-- The Unemployment rate consider small
+- The Unemployment rate consider small.
 - Most of the unemployment are in the adjacent age group, dominant by the age between 20 yo - 25 yo.
-- Some of the unemployment are not looking for job either. The reasons are vary: already had a job but not start yet; currently preparing a business; but mostly because they feel hopeless that they can get a job
-- Unemployment in Northen Maluku dominated by they who had Vocational Highschool education level
-- Unemployment numbers between middle highschool, highschool and Higher Education level are same
-- Non Labor force dominated by woman and younger population (15-19) yo
+- Some of the unemployment are not looking for job either. The reasons are vary: already had a job but not start yet; currently preparing a business; but mostly because they feel hopeless that they can get a job.
+- Unemployment in Northen Maluku dominated by they who had Vocational Highschool education level.
+- Unemployment numbers between middle highschool, highschool and Higher Education level are same.
+- Non Labor force dominated by woman and younger population (15-19) yo.
 - Random Forest Classification used to modelling the employment and unemployment in Northen Maluku's Labor Force. Undersampaling method shows best evaluation score.

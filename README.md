@@ -64,6 +64,9 @@ Since the data is based on questionnaire, the name of each column are coded. Mos
 - No missing value
 
 # Exploratory Data Analysis
+![image](https://user-images.githubusercontent.com/45409844/194709072-0ba15866-dee4-4526-9745-f7bdfadc4711.png)
+
+
 ## Labor Force Insight
 - In general labor force in Northern Maluku labor force in Northern Maluku dominated by age group between 35-39 yo, followed by age group between 40-44 yo.
 - The Unemployment rate consider small

@@ -44,10 +44,24 @@ percent. The main information collected in The National Labor Force Survey are d
 years and older. However tabulated data covers household members aged 15 years and older.
 
 # Data Preparation
-(coming soon)
+Because there are too many variables in dataset (hundreds of columns), the features are choosen by my subjectivity based on general understanding about teh data.
+The coverage of features that will be used to further analysis are:
+- Gender
+- Marital Status
+- Graduation at pandemic period status
+- Looking for a job status
+- preparing a business status
+- Main reason why not looking for a job
+- Code of region
+- Educational background
+- Age group
 
-# Data Cleansing
-(coming soon)
+
+# Data Cleansing and Manipulating
+Since the data is based on questionnaire, the name of each column are coded. Most of the data alsa already in numeric. So:
+- All columns are renamed so it easier to be understood
+- Some dictionary are prepared for interprete numerical value (it actually categorical)
+- No missing value
 
 # Exploratory Data Analysis
 ## Labor Force Insight
@@ -59,7 +73,7 @@ years and older. However tabulated data covers household members aged 15 years a
 - Only small part of them graduated in pandemic period
 - Small part of them are now preparing a business
 - Age of labour force are spread balance in all of the group age, with highest numbers in range 35 yo - 44 yo
-- Education level of labor dominated by high school Graduate (middle school, high school, and vocational high school)
+- Education level of labor force dominated by high school Graduate (middle school, high school, and vocational high school)
 
 ![image](https://user-images.githubusercontent.com/45409844/194706882-9ccddb9d-159c-47ef-92f2-33f8797639cb.png)
 
@@ -81,7 +95,7 @@ years and older. However tabulated data covers household members aged 15 years a
 There is a widely known assumption that non-labor-force must be dominated by woman. The data shown below tell us that even in every level of education, woman dominate the non-labor force.
 ![image](https://user-images.githubusercontent.com/45409844/194706445-c33926ed-aa75-4845-8106-ea07f8103c81.png)
 
-Another criteria of non-labor-force beside woman (who do housekeeping), is young people (15 - 19 yo) who currently suspected still continue their school.
+Another criteria of non-labor-force beside woman (who do housekeeping), is young people (15 - 19 yo) who currently (suspected) still continue their school.
 ![image](https://user-images.githubusercontent.com/45409844/194706409-96c5a762-9814-4152-9165-d12fef3ec3e3.png)
 
 
@@ -103,4 +117,12 @@ Metode terbaik dari evaluasi di atas adalah **Random Forest Undersampling** deng
 
 
 # Summary
-
+- Age of labour force in Northen Maluku are spread balance in all of the group age, with highest numbers in range 35 yo - 44 yo
+- Education level of labor force dominated by high school Graduate (middle school, high school, and vocational high school)
+- The Unemployment rate consider small
+- Most of the unemployment are in the adjacent age group, dominant by the age between 20 yo - 25 yo.
+- Some of the unemployment are not looking for job either. The reasons are vary: already had a job but not start yet; currently preparing a business; but mostly because they feel hopeless that they can get a job
+- Unemployment in Northen Maluku dominated by they who had Vocational Highschool education level
+- Unemployment numbers between middle highschool, highschool and Higher Education level are same
+- Non Labor force dominated by woman and younger population (15-19) yo
+- Random Forest Classification used to modelling the employment and unemployment in Northen Maluku's Labor Force. Undersampaling method shows best evaluation score.

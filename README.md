@@ -57,6 +57,13 @@ years and older. However tabulated data covers household members aged 15 years a
 
 ## Non Labor Insight
 
+There is a widely known assumption that non-labor-force must be dominated by woman. The data shown below tell us that even in every level of education, woman dominate the non-labor force.
+![image](https://user-images.githubusercontent.com/45409844/194706445-c33926ed-aa75-4845-8106-ea07f8103c81.png)
+
+Another criteria of non-labor-force beside woman (who do housekeeping), is young people (15 - 19 yo) who currently suspected still continue their school.
+![image](https://user-images.githubusercontent.com/45409844/194706409-96c5a762-9814-4152-9165-d12fef3ec3e3.png)
+
+
 
 # Modelling : Random Forest Classification
 ## Random Forest Modelling

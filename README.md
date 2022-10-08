@@ -22,7 +22,7 @@ The questionnaire can be accessed at: https://sirusa.bps.go.id/sirusa/index.php/
 ## Methodologies
 - Descriptive Analysis
 - Exploratory Data Analysis
-- Official Statstic Analysis
+- Classification Modelling
 
 ## Benefit
 - As a basis for formulating general policies related to labor in North Mollucas.
@@ -50,10 +50,29 @@ years and older. However tabulated data covers household members aged 15 years a
 (coming soon)
 
 # Exploratory Data Analysis
-(coming soon)
+## Labor Force Insight
+
+## Unemployment Insight
+
+
+## Non Labor Insight
+
 
 # Modelling : Random Forest Classification
-(coming soon)
+## Random Forest Modelling
+- Untuk mengetahui metode terbaik pemodelan Random Forest, maka akan dibandingkan antara 3 metode : Original Data, Undersampling, dan Oversampling.
+- Untuk setiap metode akan dilihat berapa akurasi, presisi, recall dan F1 score nya
+- True Positif: Yang diklasifikasi pekerja adalah pekerja
+- True Negatif: yang diklasifikasi pengangguran adalah pengangguran
+- False positif: Yang diklasifikasi pengangguran adalah pekerja
+- False negatif: Yang diklasifikasi pekerja adalah pengangguran
+- Tujuan model: mengurangi false negatif, maka perlu yang recall nya tinggi
+
+## Modelling Evaluation
+Metode terbaik dari evaluasi di atas adalah **Random Forest Undersampling** dengan pertimbangan:
+- F1 nya paling besar diantara 3 metode
+- Recall nya paling tinggi (1) sesuai dengan tujuan, yaitu ingin mengurangi false negatif (diklasifikasi pekerja ternyata pengangguran)
+
 
 # Summary
 

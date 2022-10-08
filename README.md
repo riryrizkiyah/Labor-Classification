@@ -1,25 +1,13 @@
 # Labor-Classification
 
-# Executive Summary 
-Jumlah penduduk usia kerja Maluku Utara pada Agustus 2020 berdasarkan hasil Sakernas Agustus 2020 diperkirakan sebanyak
-906.252 orang, naik 15.115 orang (1,70 persen) dibandingkan keadaan Agustus 2019 (sebanyak 891.137 orang). Dari jumlah penduduk usia
-kerja, terdapat penduduk yang merupakan Angkatan Kerja. Jumlah angkatan kerja di Maluku Utara pada Agustus 2020 mencapai 582.499
-orang, meningkat 2.847 orang (0,49 persen) dibandingkan angkatan kerja Agustus 2019 (sebanyak 579.652 orang).
-Jumlah penduduk yang bekerja pada Agustus 2020 sebesar 552.502 orang, meningkat 724 orang (0,13 persen) jika dibandingkan
-dengan keadaan Agustus 2019 (sebesar 551.778 orang). Sementara itu, jumlah pengangguran terbuka pada Agustus 2020 mencapai 29.997
-orang, bertambah sekitar 2.123 orang (7,62 persen) jika dibandingkan dengan keadaan Agustus 2019 (sebesar 27.874 orang).
-Tingkat Partisipasi Angkatan Kerja (TPAK) di Maluku Utara pada Agustus 2020 yaitu sebesar 64,28 persen, lebih rendah 0,77 persen
-poin dibanding TPAK pada Agustus 2019 (sebesar 65,05 persen). Meski TPAK mengalami penurunan, Tingkat Pengangguran Terbuka (TPT) di
-Maluku Utara pada Agustus 2020 (mencapai 5,15 persen) naik sebesar 0,34 persen poin dibandingkan TPT Agustus 2019 (sebesar 4,81
-persen).
-Pada Agustus 2020, sektor Pertanian, Kehutanan, Perburuan dan Perikanan masih merupakan sektor yang paling banyak menyerap
-tenaga kerja, dengan menyerap 235.736 pekerja atau sebesar 42,67 persen. Sementara itu sektor Listrik, Gas dan Air minum paling sedikit
-menyerap tenaga kerja, yaitu hanya menyerap 2.753 pekerja atau sebesar 0,50 persen
+
 
 # Use Case Summary
+This use case trying to explore and analyze labor data in one geographical area.
 
 ## Data and Data Source
-This use case using is National Labour Force Survey (SAKERNAS) data in North Mollucas Province, taken at the second semester of 2020 (2020 - II).
+This use case using data from National Labour Force Survey (SAKERNAS) data in Northen Maluku Province held by Statistics Indonesia that taken at the second semester of 2020 (2020 - II).
+The questionnaire can be accessed at: https://sirusa.bps.go.id/sirusa/index.php/kuesioner/2620
 
 ## Objective Statement
 - Get insight about labour force in North Mollucas
@@ -59,12 +47,16 @@ percent. The tables presented by sex and region (urban and rural) and the serial
 publication include the trend of labor force data from 2018 to 2020 by type of activity, main industry, employment status and occupation.
 
 # Data Preparation
+(coming soon)
 
 # Data Cleansing
+(coming soon)
 
 # Exploratory Data Analysis
+(coming soon)
 
 # Modelling : Random Forest Classification
+(coming soon)
 
 # Summary
 

@@ -10,9 +10,9 @@ This use case is using data from National Labour Force Survey  (NLFS) or SAKERNA
 The questionnaire can be accessed at: https://sirusa.bps.go.id/sirusa/index.php/kuesioner/2620
 
 ## Objective Statement
-- Get insight about labour force in North Mollucas
-- Get insight about unemployment in North Mollucas
-- Get insight aboun non-labour force in North Mollucas
+- Get insight about labour force in Northen Maluku Province
+- Get insight about unemployment in Northen Maluku Province
+- Get insight aboun non-labour force inNorthen Maluku Province
 
 ## Challenges
 - Large size of data, and too many variables (hundreds of columns)
@@ -25,12 +25,12 @@ The questionnaire can be accessed at: https://sirusa.bps.go.id/sirusa/index.php/
 - Classification Modelling
 
 ## Benefit
-- As a basis for formulating general policies related to labor in North Mollucas.
+- As a basis for formulating general policies related to labor in Northen Maluku Province.
 - Helping local policy maker to map out any programs for overcoming unemployment in the regions.
 
 ## Expected Outcomes
-- Know the employment characteristic in Northen Maluku
-- Know the unemployment and underemployment characteristic in Northen Maluku
+- Know the employment characteristic in Northen Maluku Province.
+- Know the unemployment and underemployment characteristic in Northen Maluku Province.
 - Know the charactristic of working age population not in the labor force who are in schools, doing housekeeping, others, exclude personal activity.
 
 
@@ -39,7 +39,7 @@ The provision of labor force data is carried out through The National Labor Forc
 force data are similar for all surveys and censuses since 1976, except for the unemployment rate and employment status, which have been extended since 2001.
 
 # Data Understanding
-Total number of household samples of the NLFS August 2020 in Maluku Utara Province were 4.386 with a response rate of 96,08
+Total number of household samples of the NLFS August 2020 in Northen Maluku Province were 4.386 with a response rate of 96,08
 percent. The main information collected in The National Labor Force Survey are data on individual household members covering persons aged 5
 years and older. However tabulated data covers household members aged 15 years and older.
 
@@ -69,9 +69,9 @@ Since the data is based on questionnaire, the name of each column are coded. Mos
 
 
 ## Labor Force Insights
-- In general labor force in Northern Maluku labor force in Northern Maluku dominated by age group between 35-39 yo, followed by age group between 40-44 yo.
+- In general labor force in Northen Maluku Province ldominated by age group between 35-39 yo, followed by age group between 40-44 yo.
 - The Unemployment rate consider small
-- Labor force in Norten Maluku spread balance (proportional to it polulation) all over regions
+- Labor force in Northen Maluku Province spread balance (proportional to it polulation) all over regions
 - Labor force dominated by man than woman
 - Most of the labor force are married
 - Only small part of them graduated in pandemic period
@@ -84,11 +84,11 @@ Since the data is based on questionnaire, the name of each column are coded. Mos
 
 ## Unemployment Insights
 
-- Unemployment in Northen Maluku consist of more man than woman (allign with the gender proportion in labor force)
+- Unemployment in Northen Maluku Province consist of more man than woman (allign with the gender proportion in labor force)
 - Small part of them are graduated in the pandemic period
 - Most of the unemployment are in the adjacent age group, dominant by the age between 20 yo - 25 yo.
 - Some of the unemployment are not looking for job either. The reasons are vary: already had a job but not start yet; currently preparing a business; but mostly because they feel hopeless that they can get a job
-- Surprisingly, unemployment in Northen Maluku dominated by they who had Vocational Highschool education level
+- Surprisingly, unemployment in Northen Maluku Province dominated by they who had Vocational Highschool education level
 - Another surprise: Unemployment numbers between middle highschool, highschool and Higher Education level are same.
 
 ![image](https://user-images.githubusercontent.com/45409844/194707193-126a9ce9-19d6-4da3-981e-8967f8a15eba.png)
@@ -116,17 +116,17 @@ Another criteria of non-labor-force beside woman (who do housekeeping), is young
 
 ## Modelling Evaluation
 Based on the modelling trial on 3 sampling methods, the best methode is **Random Forest Undersampling** with consideration as follows:
-- Highest F1 score nya between 3 sampling methods (0.67)
+- Highest F1 score between 3 sampling methods (0.67)
 - Highers Recall score (1), allign with the objective: minimize false negative (Classified as a worker, is an unemployment)
 
 
 # Summary
-- Age of labour force in Northen Maluku are spread balance in all of the group age, with highest numbers in range 35 yo - 44 yo
+- Age of labour force in Northen Maluku Province are spread balance in all of the group age, with highest numbers in range 35 yo - 44 yo
 - Education level of labor force dominated by high school Graduate (middle school, high school, and vocational high school)
 - The Unemployment rate consider small.
 - Most of the unemployment are in the adjacent age group, dominant by the age between 20 yo - 25 yo.
 - Some of the unemployment are not looking for job either. The reasons are vary: already had a job but not start yet; currently preparing a business; but mostly because they feel hopeless that they can get a job.
-- Unemployment in Northen Maluku dominated by they who had Vocational Highschool education level.
+- Unemployment in Northen Maluku Province dominated by they who had Vocational Highschool education level.
 - Unemployment numbers between middle highschool, highschool and Higher Education level are same.
 - Non Labor force dominated by woman and younger population (15-19) yo.
-- Random Forest Classification used to modelling the employment and unemployment in Northen Maluku's Labor Force. Undersampaling method shows best evaluation score.
+- Random Forest Classification used to modelling the employment and unemployment in Northen Maluku Province's Labor Force. Undersampaling method shows best evaluation score.

@@ -3,7 +3,7 @@
 
 
 # Use Case Summary
-This use case trying to explore and analyze labor data in one geographical area. Every analysis in this use case are NOT represents any organization's perspective, and only for personal exploration.
+This use case is trying to explore and analyze labor data in one geographical area. Every analysis in this use case are NOT represents any organization's perspective, and only for personal exploration.
 
 ## Data and Data Source
 This use case using data from National Labour Force Survey (SAKERNAS) data in Northen Maluku Province held by Statistics Indonesia that taken at the second semester of 2020 (2020 - II).

@@ -44,7 +44,7 @@ percent. The main information collected in The National Labor Force Survey are d
 years and older. However tabulated data covers household members aged 15 years and older.
 
 # Data Preparation
-Because there are too many variables in dataset (hundreds of columns), the features are choosen by my subjectivity based on general understanding about teh data. All the further steps are done by Python.
+Because there are too many variables in dataset (hundreds of columns), the features are choosen by my subjectivity based on general understanding about the data. All the further steps are done by Python.
 
 The coverage of features that will be used to further analysis are:
 - Gender

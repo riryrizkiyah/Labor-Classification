@@ -43,8 +43,8 @@ extended since 2001.
 
 # Data Understanding
 Total number of household samples of the NLFS August 2020 in Maluku Utara Province were 4.386 with a response rate of 96,08
-percent. The tables presented by sex and region (urban and rural) and the serial number of tables is initiated from total first. The contents of this
-publication include the trend of labor force data from 2018 to 2020 by type of activity, main industry, employment status and occupation.
+percent. The main information collected in The National Labor Force Survey are data on individual household members covering persons aged 5
+years and older. However tabulated data covers household members aged 15 years and older.
 
 # Data Preparation
 (coming soon)

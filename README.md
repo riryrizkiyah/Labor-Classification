@@ -79,7 +79,7 @@ Since the data is based on questionnaire, the name of each column are coded. Mos
 - Age of labour force are spread balance in all of the group age, with highest numbers in range 35 yo - 44 yo
 - Education level of labor force dominated by high school Graduate (middle school, high school, and vocational high school)
 
-![image](https://user-images.githubusercontent.com/45409844/194706882-9ccddb9d-159c-47ef-92f2-33f8797639cb.png)
+![Labor Force 1](https://user-images.githubusercontent.com/45409844/195127773-9189808c-88ae-48c5-9af1-e6287f9a0505.png)
 
 
 ## Unemployment Insights
@@ -91,22 +91,21 @@ Since the data is based on questionnaire, the name of each column are coded. Mos
 - Surprisingly, unemployment in Northen Maluku Province dominated by they who had Vocational Highschool education level
 - Another surprise: Unemployment numbers between middle highschool, highschool and Higher Education level are same.
 
-![image](https://user-images.githubusercontent.com/45409844/194707193-126a9ce9-19d6-4da3-981e-8967f8a15eba.png)
+![Unem1](https://user-images.githubusercontent.com/45409844/195127903-34c5d4ad-2d5d-4e26-9a67-0f7c2930b6c5.png))
 
 
 ## Non Labor Insight
 
 There is a widely known assumption that non-labor-force must be dominated by woman. The data shown below tell us that even in every level of education, woman dominate the non-labor force.
-![image](https://user-images.githubusercontent.com/45409844/194706445-c33926ed-aa75-4845-8106-ea07f8103c81.png)
+![Non Lab1](https://user-images.githubusercontent.com/45409844/195128007-0290fcb8-76eb-44c4-ba41-19c0e92a2c9e.png)
 
 Another criteria of non-labor-force beside woman (who do housekeeping), is young people (15 - 19 yo) who currently (suspected) still continue their school.
-![image](https://user-images.githubusercontent.com/45409844/194706409-96c5a762-9814-4152-9165-d12fef3ec3e3.png)
-
+![NonLab2](https://user-images.githubusercontent.com/45409844/195128108-5f0b61ba-4ab0-42af-996d-899c91d0300b.png)
 
 
 # Modelling : Random Forest Classification
 ## Random Forest Modelling
-- To know which sampling method is best used in Random Forest modelling for this data, it will compared 3 types of sampling : Original Data, Undersampling, dan Oversampling.
+- To know which sampling method is best used in Random Forest modelling for this data, it will compared 3 types of sampling : Undersampling, Oversampling, and Combined Method
 - For each sampling method,  Accuracy, Precision, Recall, and F1 score will be checked.
 - True Positive: Classiefied as a worker, is a worker.
 - True Negative: Classified as an unemployment, is an unemployment.
@@ -115,9 +114,9 @@ Another criteria of non-labor-force beside woman (who do housekeeping), is young
 - The objective of the model is to decrease false negative, means need it needs a model with high Recall score.
 
 ## Modelling Evaluation
-Based on the modelling trial on 3 sampling methods, the best methode is **Random Forest Undersampling** with consideration as follows:
-- Highest F1 score between 3 sampling methods (0.67)
-- Highers Recall score (1), allign with the objective: minimize false negative (Classified as a worker, is an unemployment)
+Based on the modelling trial on 3 sampling methods, the best methode is **Random Forest Combine Method** with consideration as follows:
+- Highest F1 score between 3 sampling methods (0.655)
+- High Recall score (0.74), allign with the objective: minimize false negative (Classified as a worker, is an unemployment)
 
 
 # Summary
@@ -129,4 +128,4 @@ Based on the modelling trial on 3 sampling methods, the best methode is **Random
 - Unemployment in Northen Maluku Province dominated by they who had Vocational Highschool education level.
 - Unemployment numbers between middle highschool, highschool and Higher Education level are same.
 - Non Labor force dominated by woman and younger population (15-19) yo.
-- Random Forest Classification used to modelling the employment and unemployment in Northen Maluku Province's Labor Force. Undersampaling method shows best evaluation score.
+- Random Forest Classification used to modelling the employment and unemployment in Northen Maluku Province's Labor Force. Combine method shows best evaluation score.
